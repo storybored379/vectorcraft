@@ -2,7 +2,7 @@
 //!
 //! ```text
 //! vectorcraft-cli mcp [--connect 127.0.0.1:7979 | --headless]
-//! vectorcraft-cli run [--in file.vectorcraft|file.svg] [--cmd id [--params '{json}']]... [--export out.svg|.png|.pdf|.jpg|.webp|.vectorcraft]... [--scale 2]
+//! vectorcraft-cli run [--in file.vectorcraft|file.svg|file.pdf|file.ai] [--cmd id [--params '{json}']]... [--export out.svg|.png|.pdf|.jpg|.webp|.vectorcraft]... [--scale 2]
 //! vectorcraft-cli commands
 //! vectorcraft-cli convert IN OUT [--scale 2] [--artboard 0] [--outline-text]
 //! vectorcraft-cli info FILE
@@ -28,7 +28,7 @@ USAGE:
       (vectorcraft --control 7979), falling back to a headless in-process session.
 
   vectorcraft-cli run [--in FILE] [--cmd ID [--params JSON]]... [--export FILE]... [--scale N]
-      Headless batch: open FILE (.vectorcraft/.svg) or start a new document, run commands in
+      Headless batch: open FILE (.vectorcraft/.svg/.pdf/.ai) or start a new document, run commands in
       order, export (.svg, .png, .pdf, .jpg, .webp, .vectorcraft by extension). Prints one JSON result per step.
 
   vectorcraft-cli commands

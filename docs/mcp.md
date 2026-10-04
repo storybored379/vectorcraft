@@ -57,7 +57,7 @@ or a full `paint.setFill` params object (`{"gradient": …}`, `{"swatch": "name"
 | `invoke_menu` | `{command, params?}` | Invokes a menu item by command id. Includes UI commands such as `view.*` and `window.*` in remote mode. |
 | `open_panel` | `{panel}` | Remote only. |
 | `screenshot` | `{path?, scale?, artboard?, window?}` | Returns MCP image content (`image/png`, base64) plus a text block. Renders the artboard; `window:true` captures the app window (remote only). |
-| `open_file` | `{path}` | Opens `.vectorcraft` or `.svg` as a new active document. |
+| `open_file` | `{path}` | Opens `.vectorcraft`, `.svg`, `.pdf` or PDF-compatible `.ai` as a new active document. |
 | `save_file` | `{path?}` | Saves in the native `.vectorcraft` format. |
 | `export` | `{path, format?, scale?, selection?}` | `svg`, `pdf`, `png`, `jpg`, `webp` or `vectorcraft`. When `format` is omitted, it comes from the path's extension. `selection: true` exports the selected objects cropped to their bounds; `outlineText: true` writes SVG text as paths. Live effects are kept. |
 | `add_text` | `{text, x?, y?, width?, height?, path?, mode?, pathEffect?, size?, font?, color?}` | Point type at (x, y); area type with `width`/`height`; or `path` + `mode` (`area`/`onPath`) to flow text in or along a path, with `pathEffect` (`rainbow`, `skew`, `3dRibbon`, `stairStep`, `gravity`). |
